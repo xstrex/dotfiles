@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #===============================================================================
-#   Author: Wenxuan
-#    Email: wenxuangm@gmail.com
-#  Created: 2018-04-05 17:37
+#   Author: Strex
+#    Email: strex@morphx.net
+#  Created: 9/28/21
 #===============================================================================
 
 # $1: option
