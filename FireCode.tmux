@@ -75,18 +75,18 @@ tmux_set status-left-fg "G12"
 tmux_set status-left-length 150
 #user=$(whoami)
 # LS="#[fg=$G02,bg=$TC,bold] $user_icon #U@#{hostname_short} #[fg=$TC,bg=$G02,nobold]$right_arrow_icon#[fg=$TC,bg=$G06] $session_icon #S "
-tmux_set status-left "#[fg=$G02,bg=$TC,bold] $user_icon #U@#{hostname_short} #[fg=$TC,bg=$G02,nobold]$right_arrow_icon#[fg=$TC,bg=$G06] $session_icon #S "
+tmux_set status-left "#[fg=$G02,bg=$TC,bold] $user_icon #U@#{hostname_short} #[fg=$TC,bg=$G06,nobold]$right_arrow_icon#[fg=$TC,bg=$G06] $session_icon #I #[fg=$G06,bg=$BG]$right_arrow_icon"
 
 # Right side of status bar
 tmux_set status-right-bg "$G02"
 tmux_set status-right-fg "G12"
 tmux_set status-right-length 150
 # RS="#[fg=$TC,bg=$G06] $time_icon $time_format #[fg=$TC,bg=$G06]$left_arrow_icon#[fg=$G02,bg=$TC] $date_icon $date_format "
-tmux_set status-right "#[fg=$TC,bg=$G06] $time_icon $time_format #[fg=$TC,bg=$G06]$left_arrow_icon#[fg=$G02,bg=$TC] $date_icon $date_format "
+tmux_set status-right "#[fg=$TC,bg=$G01] #{online_status}#[fg=$G06,bg=$BG]$left_arrow_icon#[fg=$TC,bg=$G06] $time_icon $time_format #[fg=$TC,bg=$G06]$left_arrow_icon#[fg=$G02,bg=$TC] $date_icon $date_format  "
 
 # Window status
-tmux_set window-status-format " #I :#W #F "
-tmux_set window-status-current-format "#[fg=$BG,bg=$G06]$left_arrow_icon#[fg=$TC,bold] #I :#W #F #[fg=$G06,bg=$BG,nobold]$right_arrow_icon"
+tmux_set window-status-format " #W #F "
+tmux_set window-status-current-format "#[fg=$G06,bg=$BG]$left_arrow_icon#[fg=$TC,bold] #W #F #[fg=$G06,bg=$BG,nobold]$right_arrow_icon"
 
 # Window separator
 tmux_set window-status-separator ""
