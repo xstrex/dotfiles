@@ -75,7 +75,7 @@ tmux_set status-left-fg "G12"
 tmux_set status-left-length 150
 #user=$(whoami)
 # LS="#[fg=$G02,bg=$TC,bold] $user_icon #U@#{hostname_short} #[fg=$TC,bg=$G02,nobold]$right_arrow_icon#[fg=$TC,bg=$G06] $session_icon #S "
-tmux_set status-left "#[fg=$G02,bg=$TC,bold] $user_icon #U@#{hostname_short} #[fg=$TC,bg=$G06,nobold]$right_arrow_icon#[fg=$TC,bg=$G06] $session_icon #I #[fg=$G06,bg=$BG]$right_arrow_icon"
+tmux_set status-left "#[fg=$G02,bg=$TC,bold] $user_icon #U@#{hostname_short} #[fg=$TC,bg=$G06,nobold]$right_arrow_icon#[fg=$TC,bg=$G06] $session_icon #I #[fg=$G06,bg=$BG]$right_arrow_icon #[fg=$TC,bg=$G06]#{prefix_highlight}"
 
 # Right side of status bar
 tmux_set status-right-bg "$G02"
