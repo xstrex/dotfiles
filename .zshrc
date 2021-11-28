@@ -39,4 +39,15 @@ else
         echo "Sonos is not installed, check https://github.com/avantrec/soco-cli"
 fi
 
+# Make and cd to new dir
+mcd () {
+ if [ -z "$1" ]; then
+        echo "Make and change to new dir"
+        return 1
+ else
+        mkdir -p "$1"
+        cd "$1" || return
+ fi
+}
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
