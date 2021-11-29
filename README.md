@@ -3,7 +3,7 @@ install zsh
 
 ### Install oh-my-zsh
 
-```shell
+```sh
 wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh
 ```
@@ -23,7 +23,7 @@ install tmux
 ```wget https://raw.githubusercontent.com/xstrex/dotfiles/main/.tmux.conf -O ~/.tmux.conf```
 
 ### Download tmux theme
-```shell
+```sh
 wget https://raw.githubusercontent.com/xstrex/dotfiles/main/tender.tmux -O ~/.tmux/plugins/tender.tmux
 chmod 755 ~/.tmux/plugins/tender.tmux
 ```
