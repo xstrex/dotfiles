@@ -22,6 +22,9 @@ install tmux
 ### Download tmux conf
 ```wget https://raw.githubusercontent.com/xstrex/dotfiles/main/.tmux.conf -O ~/.tmux.conf```
 
+### Install TPM
+```git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm```
+
 ### Download tmux theme
 ```sh
 wget https://raw.githubusercontent.com/xstrex/dotfiles/main/tender.tmux -O ~/.tmux/plugins/tender.tmux
