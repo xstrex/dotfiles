@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #===============================================================================
-#   Author: Wenxuan
-#    Email: wenxuangm@gmail.com
-#  Created: 2018-04-05 17:37
+#   Author: Strex
+#    Email: strex@morphx.net
+#  Created: 12/18/21
 #===============================================================================
 
 # $1: option
@@ -90,6 +90,7 @@ tmux_set window-status-separator ""
 
 # Window status alignment
 tmux_set status-justify centre
+tmux_set status-position top
 
 # Current window status
 tmux_set window-status-current-statys "fg=$TC,bg=$BG"
