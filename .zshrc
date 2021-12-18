@@ -4,7 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/strex/.oh-my-zsh"
 
-ZSH_THEME="darkblood2"
+ZSH_THEME="morphx"
 
 HYPHEN_INSENSITIVE="true"
 DISABLE_UPDATE_PROMPT="true"
