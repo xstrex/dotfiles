@@ -11,7 +11,7 @@ sh install.sh
 ```wget https://raw.githubusercontent.com/xstrex/dotfiles/main/.zshrc -O ~/.zshrc```
 
 ### Download zsh theme
-```wget https://raw.githubusercontent.com/xstrex/dotfiles/main/darkblood2.zsh-theme -O ~/.oh-my-zsh/themes/darkblood2.zsh-theme```
+```wget https://raw.githubusercontent.com/xstrex/dotfiles/main/morphx.zsh-theme -O ~/.oh-my-zsh/custom/themes/morphx.zsh-theme```
 
 ### Source env
 ```source ~/.zshrc```
@@ -27,8 +27,8 @@ install tmux
 
 ### Download tmux theme
 ```sh
-wget https://raw.githubusercontent.com/xstrex/dotfiles/main/tender.tmux -O ~/.tmux/plugins/tender.tmux
-chmod 755 ~/.tmux/plugins/tender.tmux
+wget https://raw.githubusercontent.com/xstrex/dotfiles/main/morphx.tmux -O ~/.tmux/plugins/morphx.tmux
+chmod 755 ~/.tmux/plugins/morphx.tmux
 ```
 
 ## VI
