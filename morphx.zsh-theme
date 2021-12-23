@@ -1,12 +1,12 @@
 # Morphx - meh.
-if [ $UID -eq 0 || $USER -eq root ]; then NCOLOR="red"; else NCOLOR="yellow"; fi
+if [[ $UID -eq 0 || $USER -eq root ]]; then NCOLOR="red"; else NCOLOR="yellow"; fi
 
 # returns ✘ if there are errors, nothing otherwise
 return_status() {
    echo "%{$fg[red]%}%(?..✘)%{$reset_color%}"
 }
 
-PROMPT='%{$fg[red]%}[%{$fg_bold[white]%}%1/%{$fg[red]%}]%{$fg[$NCOLOR]%}➤ %{$reset_color%}'
+PROMPT='%{$fg_bold[red]%}[%{$fg_bold[white]%}%1/%{$fg[red]%}]%{$fg[$NCOLOR]%}➤ %{$reset_color%}'
 #RPROMPT='%{$fg[red]%}:[%{$fg_bold[white]%}$(git_prompt_info)%{$fg[red]%}]%{$reset_color%}'
 RPROMPT='$(return_status)$(git_prompt_info)'
 
