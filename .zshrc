@@ -13,6 +13,7 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 HIST_STAMPS="mm/dd/yyyy"
+TERM="xterm-256color"
 plugins=(git extract systemd sublime)
 
 source $ZSH/oh-my-zsh.sh
