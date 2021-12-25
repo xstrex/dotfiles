@@ -21,6 +21,10 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export LANG=en_US.UTF-8
 
+# ls Colors
+LS_COLORS="ow=01;34:di=01;34"
+export LS_COLORS
+
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
