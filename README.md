@@ -8,10 +8,14 @@ wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh
 ```
 ### Download zsh conf
-```wget https://raw.githubusercontent.com/xstrex/dotfiles/main/.zshrc -O ~/.zshrc```
+```sh
+wget https://raw.githubusercontent.com/xstrex/dotfiles/main/.zshrc -O ~/.zshrc
+```
 
 ### Download zsh theme
-```wget https://raw.githubusercontent.com/xstrex/dotfiles/main/morphx.zsh-theme -O ~/.oh-my-zsh/custom/themes/morphx.zsh-theme```
+```sh
+wget https://raw.githubusercontent.com/xstrex/dotfiles/main/morphx.zsh-theme -O ~/.oh-my-zsh/custom/themes/morphx.zsh-theme
+```
 
 ### Source env
 ```source ~/.zshrc```
