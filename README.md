@@ -48,4 +48,4 @@ install vim
 ```wget https://raw.githubusercontent.com/xstrex/dotfiles/main/vimrc -O ~/.vim/vimrc```
 
 ### Launch vim
-run: :PlugInstall
+```:PlugInstall```
