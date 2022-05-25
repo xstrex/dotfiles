@@ -4,8 +4,7 @@ install zsh
 ### Install oh-my-zsh
 
 ```sh
-wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
-sh install.sh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 ### Download zsh conf
 ```sh
