@@ -23,10 +23,14 @@ wget https://raw.githubusercontent.com/xstrex/dotfiles/main/morphx.zsh-theme -O 
 install tmux
 
 ### Download tmux conf
-```wget https://raw.githubusercontent.com/xstrex/dotfiles/main/.tmux.conf -O ~/.tmux.conf```
+```sh
+wget https://raw.githubusercontent.com/xstrex/dotfiles/main/.tmux.conf -O ~/.tmux.conf
+```
 
 ### Install TPM
-```git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm```
+```sh
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
 
 ### Download tmux theme
 ```sh
