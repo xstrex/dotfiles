@@ -51,7 +51,8 @@ filetype indent on " automatically indent code
 " syntax highlighting
 syntax enable
 colorscheme tender
-set background=dark
+hi Normal guibg=NONE ctermbg=NONE
+" set background=dark
 let g:airline_theme = 'tender'
 let g:airline_powerline_fonts = 1
 if (has("termguicolors"))
