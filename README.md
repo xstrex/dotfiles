@@ -8,12 +8,12 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ```
 ### Download zsh conf
 ```sh
-wget https://raw.githubusercontent.com/xstrex/dotfiles/main/.zshrc -O ~/.zshrc
+curl https://raw.githubusercontent.com/xstrex/dotfiles/main/.zshrc -o ~/.zshrc
 ```
 
 ### Download zsh theme
 ```sh
-wget https://raw.githubusercontent.com/xstrex/dotfiles/main/morphx.zsh-theme -O ~/.oh-my-zsh/custom/themes/morphx.zsh-theme
+curl https://raw.githubusercontent.com/xstrex/dotfiles/main/morphx.zsh-theme -o ~/.oh-my-zsh/custom/themes/morphx.zsh-theme
 ```
 
 ### Source env
@@ -24,7 +24,7 @@ install tmux
 
 ### Download tmux conf
 ```sh
-wget https://raw.githubusercontent.com/xstrex/dotfiles/main/.tmux.conf -O ~/.tmux.conf
+curl https://raw.githubusercontent.com/xstrex/dotfiles/main/.tmux.conf -o ~/.tmux.conf
 ```
 
 ### Install TPM
@@ -34,7 +34,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ### Download tmux theme
 ```sh
-wget https://raw.githubusercontent.com/xstrex/dotfiles/main/morphx.tmux -O ~/.tmux/plugins/morphx.tmux
+curl https://raw.githubusercontent.com/xstrex/dotfiles/main/morphx.tmux -o ~/.tmux/plugins/morphx.tmux
 chmod 755 ~/.tmux/plugins/morphx.tmux
 ```
 
@@ -53,7 +53,7 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vi
 
 ### Download vimrc
 ```sh
-wget https://raw.githubusercontent.com/xstrex/dotfiles/main/vimrc -O ~/.vim/vimrc
+curl https://raw.githubusercontent.com/xstrex/dotfiles/main/vimrc -o ~/.vim/vimrc
 ```
 
 ### Launch vim
