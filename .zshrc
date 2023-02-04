@@ -36,13 +36,13 @@ alias python="python3"
 alias c="clear"
 alias myip='curl http://ipecho.net/plain; echo'
 
-if [[ -e /usr/local/bin/sonos ]]; then
-        alias sr="sonos 'Sonos Roam'"
-        alias sb="sonos Bedroom"
-        alias sb2="sonos 'Living Room'"
-else
-        echo "Sonos is not installed, check https://github.com/avantrec/soco-cli"
-fi
+#if [[ -e /usr/local/bin/sonos ]]; then
+#        alias sr="sonos 'Sonos Roam'"
+#        alias sb="sonos Bedroom"
+#        alias sb2="sonos 'Living Room'"
+#else
+#        echo "Sonos is not installed, check https://github.com/avantrec/soco-cli"
+#fi
 
 # Make and cd to new dir
 mcd () {
