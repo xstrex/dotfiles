@@ -6,7 +6,7 @@ return_status() {
    echo "%{$fg[red]%}%(?..✘)%{$reset_color%}"
 }
 
-PROMPT='%{$fg_bold[red]%}[%{$fg_bold[white]%}%1/%{$fg[red]%}]%{$fg[$NCOLOR]%}➤ %{$reset_color%}'
+PROMPT='%{$fg_bold[red]%}[%{$fg_bold[white]%}%n%{$fg[red]%}]%{$fg[$NCOLOR]%}➤ %{$reset_color%}'
 #RPROMPT='%{$fg[red]%}:[%{$fg_bold[white]%}$(git_prompt_info)%{$fg[red]%}]%{$reset_color%}'
 RPROMPT='$(return_status)$(git_prompt_info)'
 
