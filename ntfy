@@ -1,0 +1,55 @@
+#!/bin/sh
+
+set -e
+
+startepoch=$(date +%s)
+
+set +e
+"$@"
+rc=$?
+set -e
+
+endepoch=$(date +%s)
+elapsed=$((endepoch - startepoch))
+
+if [ $elapsed -gt 3600 ]; then
+	duration="$((elapsed/3600))h $(((elapsed%3600)/60))m"
+elif [ $elapsed -gt 60 ]; then
+	duration="$((elapsed/60))m $((elapsed%60))s"
+else
+	duration="${elapsed}s"
+fi
+
+if [ "$1" != "" ]; then
+	if [ "$title" = "" ]; then
+		if [ $rc -gt 0 ]; then
+			title="$1 failed"
+		else
+			title="$1 finished"
+		fi
+		title="$title on $(hostname -s | awk '{print tolower($0)}')"
+	fi
+	if [ "$message" = "" ]; then
+		cmd="$@"
+		message="'$(echo "$cmd" | cut -c1-32)' exited"
+		if [ $rc -gt 0 ]; then
+			message="$message with RC $rc"
+		fi
+		message="$message in $duration"
+	fi
+fi
+
+if [ "$title" = "" ]; then
+	title="$(whoami)@$(hostname -s | awk '{print tolower($0)}')"
+fi
+if [ "$message" = "" ]; then
+	message="ntfy finished in ${duration}"
+fi
+
+curl -sS \
+  --form-string "token=$(awk -F "=" '/token/ {print $2}' ~/.ntfy)" \
+  --form-string "user=$(awk -F "=" '/user/ {print $2}' ~/.ntfy)" \
+  --form-string "title=$title" \
+  --form-string "message=$message" \
+  https://api.pushover.net/1/messages.json \
+  1>/dev/null
